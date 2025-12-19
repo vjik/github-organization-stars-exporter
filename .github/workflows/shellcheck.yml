@@ -33,4 +33,4 @@ jobs:
         run: shellcheck --version
 
       - name: Run ShellCheck
-        run: shellcheck --format=gcc github-lookup-next-id
+        run: shellcheck --format=gcc github-organization-stars-exporter.sh
