@@ -16,11 +16,7 @@ fi
 
 echo "Fetching data for organization '$org_name'..."
 
-# Initialize variable to store CSV data
 csv_data="Repository,Stars"
-
-# Get organization repositories via GitHub API
-# Use pagination to get all repositories
 page=1
 per_page=100
 repo_count=0
@@ -43,7 +39,6 @@ while true; do
     repos_data=$(echo "$response" | jq -r '.[] | "\(.name),\(.stargazers_count)"')
     csv_data="${csv_data}"$'\n'"${repos_data}"
 
-    # Count total stars
     page_stars=$(echo "$response" | jq '[.[].stargazers_count] | add')
     total_stars=$((total_stars + page_stars))
     repo_count=$((repo_count + repos_count))
@@ -59,7 +54,6 @@ if [ "$repo_count" -eq 0 ]; then
     echo "Warning: no repositories found for organization '$org_name'"
 fi
 
-# Sort by star count (descending) and write to file
 {
     echo "$csv_data" | head -n 1
     echo "$csv_data" | tail -n +2 | sort -t',' -k2 -rn
