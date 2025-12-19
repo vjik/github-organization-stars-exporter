@@ -1,5 +1,24 @@
 #!/bin/bash
+#
+# Name: GitHub Organization Stars Exporter
+# Version: 1.0.0
+# Description: Export GitHub organization repositories and stars to CSV
+# Repository: https://github.com/vjik/github-organization-stars-exporter
+#
+# Author: Sergei Predvoditelev <sergei@predvoditelev.ru>
+# License: BSD-3-Clause
+#
+
 set -euo pipefail
+
+echo ""
+echo "╔════════════════════════════════════════════╗"
+echo "║                                            ║"
+echo "║  GitHub Organization Stars Exporter 1.0.0  ║"
+echo "║          by Sergei Predvoditelev           ║"
+echo "║                                            ║"
+echo "╚════════════════════════════════════════════╝"
+echo ""
 
 read -rp "Enter GitHub organization name: " org_name
 

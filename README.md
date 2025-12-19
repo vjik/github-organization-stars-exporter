@@ -8,9 +8,17 @@ A simple bash script that exports GitHub organization repositories and their sta
 
 ```
 $ ./github-organization-stars-exporter.sh
+
+╔════════════════════════════════════════════╗
+║                                            ║
+║  GitHub Organization Stars Exporter 1.0.0  ║
+║          by Sergei Predvoditelev           ║
+║                                            ║
+╚════════════════════════════════════════════╝
+
 Enter GitHub organization name: yiisoft
 Fetching data for organization 'yiisoft'...
-Done! Data saved to file: yiisoft-20251219_134817.csv
+Done! Data saved to file: yiisoft-20251219_145314.csv
 Total repositories: 209
 Total stars: 34327
 ```
