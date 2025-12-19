@@ -4,7 +4,16 @@
 [![ShellCheck](https://github.com/vjik/github-organization-stars-exporter/actions/workflows/shellcheck.yml/badge.svg?branch=master)](https://github.com/vjik/github-organization-stars-exporter/actions/workflows/shellcheck.yml?branch=master)
 [![License](https://img.shields.io/github/license/vjik/github-organization-stars-exporter)](./LICENSE.md)
 
-A simple bash script that exports GitHub organization repositories and their star counts to a CSV file.
+A simple bash script that exports GitHub organization repositories and their star counts to a CSV file:
+
+```
+$ ./github-organization-stars-exporter.sh
+Enter GitHub organization name: yiisoft
+Fetching data for organization 'yiisoft'...
+Done! Data saved to file: yiisoft-20251219_134817.csv
+Total repositories: 209
+Total stars: 34327
+```
 
 ## Features
 
@@ -49,17 +58,6 @@ Repository,Stars
 yii2,14317
 yii,4838
 yii2-app-advanced,1671
-```
-
-## Usage example
-
-```
-$ ./github-organization-stars-exporter.sh
-Enter GitHub organization name: yiisoft
-Fetching data for organization 'yiisoft'...
-Done! Data saved to file: yiisoft-20251219_134817.csv
-Total repositories: 209
-Total stars: 34327
 ```
 
 ## License
