@@ -35,7 +35,7 @@ while true; do
         exit 1
     fi
 
-    repos_count=$(echo "$response" | grep -o '"name"' | wc -l)
+    repos_count=$(echo "$response" | jq 'length')
     if [ "$repos_count" -eq 0 ]; then
         break
     fi

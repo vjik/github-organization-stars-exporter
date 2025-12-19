@@ -58,7 +58,7 @@ $ ./github-organization-stars-exporter.sh
 Enter GitHub organization name: yiisoft
 Fetching data for organization 'yiisoft'...
 Done! Data saved to file: yiisoft-20251219_134817.csv
-Total repositories: 410
+Total repositories: 209
 Total stars: 34327
 ```
 
