@@ -1,7 +1,7 @@
 # GitHub Organization Stars Exporter
 
 [![Release](https://img.shields.io/github/v/release/vjik/github-organization-stars-exporter)](https://github.com/vjik/github-organization-stars-exporter/releases)
-[![ShellCheck](https://github.com/vjik/github-organization-stars-exporter/actions/workflows/shellcheck.yml/badge.svg?branch=master)](https://github.com/vjik/github-organization-stars-exporter/actions/workflows/shellcheck.yml?branch=master)
+[![ShellCheck](https://github.com/vjik/github-organization-stars-exporter/actions/workflows/shellcheck.yml/badge.svg?branch=master)](https://github.com/vjik/github-organization-stars-exporter/actions/workflows/shellcheck.yml?query=branch%3Amaster)
 [![License](https://img.shields.io/github/license/vjik/github-organization-stars-exporter)](./LICENSE.md)
 
 A simple bash script that exports GitHub organization repositories and their star counts to a CSV file:
